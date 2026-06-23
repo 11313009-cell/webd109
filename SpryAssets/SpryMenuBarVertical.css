@@ -1,29 +1,8 @@
 @charset "UTF-8";
-
-/* SpryMenuBarVertical.css - version 0.6 - Spry Pre-Release 1.6.1 */
-
-/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
-
-/*******************************************************************************
-
- LAYOUT INFORMATION: describes box model, positioning, z-order
-
- *******************************************************************************/
-
-/* The outermost container of the Menu Bar, a fixed width box with no margin or padding */
-ul.MenuBarVertical
-{
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	font-size: 100%;
-	cursor: default;
-	width: 8em;
-}
 /* Set the active Menu Bar with this class, currently setting z-index to accomodate IE rendering bug: http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.html */
 ul.MenuBarActive
 {
-	z-index: 1000;
+	z-index: 0;
 }
 /* Menu item containers, position children relative to this container and are same fixed width as parent */
 ul.MenuBarVertical li
@@ -46,7 +25,6 @@ ul.MenuBarVertical li
 /* Submenus should appear slightly overlapping to the right (95%) and up (-5%) with a higher z-index, but they are initially off the left side of the screen (-1000em) */
 ul.MenuBarVertical ul
 {
-	margin: -5% 0 0 95%;
 	padding: 0;
 	list-style-type: none;
 	font-size: 100%;
@@ -78,6 +56,7 @@ ul.MenuBarVertical ul li
 ul.MenuBarVertical
 {
 	border: 1px solid #CCC;
+	float: left;
 }
 /* Submenu containers have borders on all sides */
 ul.MenuBarVertical ul
