@@ -18,6 +18,7 @@
 	float: left;
 	height: 600px;
 	width: 1000px;
+	margin: auto;
 }
 #item {
 	float: right;
@@ -29,15 +30,93 @@
 	height: 50px;
 	width: 1280px;
 }
+.texttitle {
+	font-size: 24px;
+	font-weight: bold;
+}
 </style><link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.article {	font-size: 16px;
+}
+</style>
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
-
+<script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
 </head>
 
 <body>
 <div id="container">
   <div id="header"><img src="images/banner-4.jpg" width="1280" height="150" /></div>
-  <div id="article"> id "article" 的內容放在這裡</div>
+  <div id="article">
+    <div id="TabbedPanels1" class="TabbedPanels">
+      <ul class="TabbedPanelsTabGroup">
+        <li class="TabbedPanelsTab" tabindex="0">基本資料</li>
+        <li class="TabbedPanelsTab" tabindex="0">設計理念</li>
+        <li class="TabbedPanelsTab" tabindex="0">學習反思</li>
+      </ul>
+      <div class="TabbedPanelsContentGroup">
+        <div class="TabbedPanelsContent">
+          <table width="749" height="154" border="0">
+            <tr>
+              <td width="400" rowspan="4"><img src="images/me.jpg" width="400" height="294" /></td>
+              <td width="339" align="center" class="texttitle">個人資料</td>
+            </tr>
+            <tr>
+              <td><p class="article">姓名:黃秝蓳</p>
+                <p class="article">就讀學校:華南高商</p>
+                <p class="article">就讀科別:電子商務科</p>
+                <p class="article">社群帳號:lijin._.052</p>
+              <p class="article">email:11313009@gm.hnvs.cy.edu.tw</p></td>
+            </tr>
+            <tr>
+              <td align="center" class="texttitle">經歷</td>
+            </tr>
+            <tr>
+              <td><p class="article"><span class="article">高一:</span>擔任風紀股長、輔導室志工</p>
+              <p class="article"><span class="article">高二</span>:擔任圖書股長、數應小老師、輔導室志工</p></td>
+            </tr>
+          </table>
+        </div>
+        <div class="TabbedPanelsContent">
+          <p class="article">在資訊快速流通的時代，許多人對嘉義的印象仍停留在傳統小吃與觀光景點，因此本網站以「探索城市」為核心概念，整合在地特色美食、飲茶文化、夜市風情及管樂節活動，帶領使用者探索嘉義豐富的城市魅力。</p>
+          <ul>
+            <li>慢嚐時光</li>
+          </ul>
+          <p class="article"> 以慢步調的生活理念為核心，帶領使用者透過巷弄美食與特色伴手禮探索嘉義的在地魅力。讓每位造訪者都能在這慢嚐時光中，發現屬於自己的嘉義故事。</p>
+          <ul>
+            <li>燈火尋味</li>
+          </ul>
+          <p class="article">以嘉義夜市文化為主題。無論是熱鬧的文化路夜市或充滿在地氛圍的彌陀夜市，都承載著嘉義人的生活記憶與城市溫度。透過文字、圖片與導覽設計呈現嘉義夜市獨有的人間煙火與美食文化循著燈火與香氣。        </p>
+          <ul>
+            <li>樂響嘉味</li>
+          </ul>
+          <p class="article">以嘉義國際管樂節為核心主題，結合音樂的躍動與城市特色，透過清晰的導覽介面與豐富的活動介紹讓使用者能深入了解管樂節的歷史沿革、精彩活動及文化價值。</p>
+        </div>
+        <div class="TabbedPanelsContent">
+          <table width="769" border="0">
+            <tr>
+              <td width="763" class="texttitle">1.這學期學到了哪些技能</td>
+            </tr>
+            <tr>
+              <td class="article">用PhotoImpact繪製網頁的橫幅及調整圖片的大小，透過Dreamweaver學到了運用HTML、CSS 去建立標題、圖片、超連結及表格等網頁元素。以及運用GitHub Pages免費上傳檔案、建立儲存庫變成網站。</td>
+            </tr>
+            <tr>
+              <td class="texttitle">2.學習過程遭遇的困難及解決方式</td>
+            </tr>
+            <tr>
+              <td><p class="article">在建立網頁的過程中我最常遇到且認為最麻煩的就是版面的排版常跑掉，有時在新增文字或換行後，原本排列整齊的內容會突然移動到不屬於它的位置。為了解決這些問題我需要不斷檢查 HTML 標籤是否正確關閉，以及 CSS 的排版設定是否正確。雖然調整的過程很費時且過程中常眼花看錯行，但這讓我更熟悉網頁排版的技巧以及提升自己解決問題的能力。</p></td>
+            </tr>
+            <tr>
+              <td class="texttitle">3.獲得哪些能力</td>
+            </tr>
+            <tr>
+              <td class="article">從最初的蒐集與整理資料，將資訊分類後呈現在不同頁面中，運用PhotoImpact繪製頁面橫幅到解 HTML 與 CSS 的基本應用，建立頁面架構、插入圖片與文字調整版面配置，讓我對網站製作有更完整的認識與實作經驗。</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
   <div id="item">  <ul id="MenuBar1" class="MenuBarVertical">
       <li><a href="main.html">慢嘗時光</a></li>
       <li><a href="night.html" title="燈火巡味">燈火巡味</a></li>
@@ -48,5 +127,8 @@
     </ul></div>
   <div id="footer"><img src="images/banner - 6.jpg" width="1280" height="90" /></div>
 </div>
+<script type="text/javascript">
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+</script>
 </body>
 </html>

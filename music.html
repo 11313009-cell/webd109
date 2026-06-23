@@ -18,6 +18,7 @@
 	float: left;
 	height: 600px;
 	width: 1000px;
+	overflow: auto;
 }
 #item {
 	float: right;
@@ -29,15 +30,68 @@
 	height: 50px;
 	width: 1280px;
 }
+.texttile {
+	font-size: 24px;
+}
+.titiestyl {
+	font-size: 24px;
+	color: #000;
+	font-weight: bold;
+}
 </style><link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.textword {	font-size: 16px;
+	color: #000;
+}
+#container #article table tr td p .titiestyl .texttile .titiestyl {
+	text-align: center;
+	font-weight: bold;
+}
+</style>
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
-
+<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+}
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+</script>
 </head>
 
 <body>
 <div id="container">
   <div id="header"><img src="images/banner-3.jpg" width="1280" height="150" /></div>
-  <div id="article"> id "article" 的內容放在這裡</div>
+  <div id="article">
+    <table width="996" height="583" border="0">
+      <tr>
+        <td height="68" colspan="2" align="center" class="textword"><a name="top" id="top"></a>傳承之聲 | <a href="#a02">精彩演出</a></td>
+      </tr>
+      <tr>
+        <td height="64" colspan="2" align="center" class="titiestyl">傳承之聲---管樂節歷史發展</td>
+      </tr>
+      <tr>
+        <td height="85" colspan="2"><p>日據時代昭和6年（民國20年）嘉義設立第一支本地學生吹奏樂隊，經由市民熱情回應後，管樂風潮便於嘉義地區開始發芽茁壯，其他學校也開始紛紛成立管樂隊，於1993年舉辦的第一屆管樂節當時只有嘉義農專、嘉義高中、嘉義女中、嘉義高工、嘉義家職 五支管樂社團參演，從此寫下管樂在嘉義的新樂章。2011年成功爭取到國際管樂重要活動－「世界管樂年會（WASBE）」主辦權，吸引來自國際14個優秀樂團報名參加，超過3,000名國際管樂演奏者、300位以上的音樂家齊聚嘉義市，將嘉義市國際管樂節的氣氛和國際能見度推向更高點。</p>
+        <p>2026年嘉義市國際管樂節將正式邁入第34屆，30年來嘉義市不斷透過管樂對外溝通，利用音樂奠定與在地人、觀光客等對於嘉義市城市意象，主動製造聆聽，引導大眾對於嘉義市、管樂的討論與好奇，一步一腳印締造出象徵獨一無二的城市品牌。</p></td>
+      </tr>
+      <tr>
+        <td width="481" align="center"><img src="images/music-1-s.jpg" width="300" height="200" onclick="MM_openBrWindow('images/music-1.jpg','','')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+        <td width="505" align="center"><img src="images/music-4-s.jpg" width="300" height="200" onclick="MM_openBrWindow('images/music-3.jpg','','')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+      </tr>
+      <tr>
+        <td height="89" colspan="2" align="center" class="titiestyl"><a name="a02" id="a02"></a>精彩演出---介紹活動內容</td>
+      </tr>
+      <tr>
+        <td height="106" colspan="2">每年均邀請<span lang="EN-US" xml:lang="EN-US">4</span>支以上的國際表演隊伍及國內優秀管樂團隊參加演出。行進樂隊在<span lang="EN-US" xml:lang="EN-US">3</span>公里長的中山路「管樂大道」上進行表演，創意踩街參賽隊伍則是以「音樂」為創意元素來共襄盛舉，創造本市特有的文化節慶。「定點表演」與開幕典禮同時在市立體育場舉行，參演之樂旗隊伍盡情揮灑美技，進行各項隊形變換與分列式表演。</td>
+      </tr>
+      <tr>
+        <td align="center"><img src="images/music-2-s.jpg" width="300" height="200" onclick="MM_openBrWindow('images/music-2.jpg','','')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+        <td align="center"><img src="images/music-3-s.jpg" width="300" height="169" onclick="MM_openBrWindow('images/music-3.jpg','','')" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+      </tr>
+    </table>
+  </div>
   <div id="item"> <ul id="MenuBar1" class="MenuBarVertical">
       <li><a href="main.html">慢嘗時光</a></li>
       <li><a href="night.html" title="燈火巡味">燈火巡味</a></li>
